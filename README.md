@@ -47,7 +47,7 @@ demo-js-qiniu
     * [开通七牛开发者帐号](https://portal.qiniu.com/signup)
     * [登录七牛开发者自助平台，查看 AccessKey 和 SecretKey](https://portal.qiniu.com/setting/key) 。
 
-        ```javascript
+```javascript
 
             module.exports = {
                 'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
@@ -58,11 +58,11 @@ demo-js-qiniu
 		'Domain': 'http://qiniu-plupload.qiniudn.com/'
             }
 
-        ```
+```
 
     * [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
 
-        ```javascript
+ ```javascript
 
             'wilddog':{
                 'baseurl':'<https://<yourappId>.wilddogio.com/' ////野狗url引用地址      
@@ -71,10 +71,10 @@ demo-js-qiniu
                  'imageBaseUrl':'<http://7xklh8.com1.z0.glb.clouddn.com/>' //七牛存储图片的baseurl,本例demo中用到，代码七牛图片存储的url前缀 
             }
 
-        ```
+```
     * [主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库](ss)
 
-            ```javscript
+```javscript
 		'FileUploaded': {
 		var res = $.parseJSON(info);
                     var url;
@@ -94,7 +94,8 @@ demo-js-qiniu
                     });
 
              }
-		```
+```
+
 *  在根目录运行`make`启动
 
 *  访问`http://127.0.0.1:18080/`或`http://localhost:18080/`
