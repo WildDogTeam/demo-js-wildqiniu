@@ -50,12 +50,12 @@ demo-js-qiniu
         ```javascript
 
             module.exports = {
-		'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
-		'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP',
-		'Bucket_Name': 'baidu',
-		'Port': 18080,
-		'Uptoken_Url': '/uptoken',
-		'Domain': 'http://qiniu-plupload.qiniudn.com/'
+			'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
+			'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP',
+			'Bucket_Name': 'baidu',
+			'Port': 18080,
+			'Uptoken_Url': '/uptoken',
+			'Domain': 'http://qiniu-plupload.qiniudn.com/'
             }
 
         ```
