@@ -50,7 +50,7 @@ demo-js-qiniu
         ```javascript
 
             module.exports = {
-                'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
+		'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
 		'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP',
 		'Bucket_Name': 'baidu',
 		'Port': 18080,
@@ -72,20 +72,21 @@ demo-js-qiniu
             }
 
         ```
-    * [主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库](ss)
+    * 主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库
 
         ```javscript
+
 		'FileUploaded': {
-		var res = $.parseJSON(info);
-                    var url;
-                    if (res.url) {
-                        url = res.url;
-                    } else {
-                        var domain = up.getOption('domain');
-                        url = domain + encodeURI(res.key);
-                        var link = domain + res.key;
-                    }
-                    var ref = new  Wilddog(conf.wilddog.baseurl);//图片上传成功后，存储回调信息(name ,url等)，实际开发中可以自己定义json格式
+			var res = $.parseJSON(info);
+			var url;
+			if (res.url) {
+				url = res.url;
+			} else {
+				var domain = up.getOption('domain');
+				url = domain + encodeURI(res.key);
+				var link = domain + res.key;
+			}
+			var ref = new  Wilddog(conf.wilddog.baseurl);//图片上传成功后，存储回调信息(name ,url等)，实际开发中可以自己定义json格式
                         ref.push({
                         "id":randomString(10),
                         "name" : res.key,
