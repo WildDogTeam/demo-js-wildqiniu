@@ -1,8 +1,8 @@
 var conf =  {
-          'wilddog' : {   
-                'baseurl': '<Your wilddog url>' ////野狗url引用地址     
-            },
-            'qiniu' : {
-	  'imageBaseUrl': '<Your qiniu imagebase url>' //七牛存储图片的baseurl      
-            }
+            'wilddog' : {
+    	     "baseurl":"https://myoffice1.wilddogio.com/messages" //野狗url
+    },
+    'qiniu' :{
+      	"imageBaseUrl":"http://7xklh8.com1.z0.glb.clouddn.com/"  //七牛存储图片的baseurl
+    }
 }

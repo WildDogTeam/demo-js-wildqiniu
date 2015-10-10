@@ -10,17 +10,28 @@ demo-js-qiniu
 
 ![一个demo页面的快照](screenshot.png)
 
-### 功能简介
-　
 ### 构成介绍
-* Plupload ，建议 2.1.1 及以上版本
-* qiniu.js，SDK主体文件，上传功能\数据处理实现
-* wilddog.js 野狗javascript sdk
 
-* 上传
- * html5模式大于4M时可分块上传，小于4M时直传
- * Flash、html4模式直接上传
- * 存入野狗数据库
+	├── demo　　　　
+	│   ├── js
+	│   │   ├── conf.js	demo野狗数据库引用url配置
+	│   │   ├── main.js 	主函数入口，主要实现图片上传和图片地址存入野狗数据库
+	│   │   ├── masonry-docs.min.js 实现demo瀑布流
+	│   │   ├── plupload  建议 2.1.1 及以上版本
+	│   │   ├── qiniu.js  SDK主体文件，上传功能\数据处理实现
+	│   ├── server.js　　　　　后端server文件
+	│   ├── config.js　　　　　七牛配置文件
+	│   └── views
+	│       └── index.html　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+	├── Gruntfile.coffee
+	├── Makefile
+	├── package.json
+	├── README.md
+	└── src
+	    ├── qiniu.js
+	    ├── qiniu.min.js
+	    └── wilddog.js
+
 
 
 ## 运行示例

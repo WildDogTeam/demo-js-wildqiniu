@@ -61,6 +61,7 @@ $(function() {
                     });
             },
             'Error': function(up, err, errTip) {
+                 console.log(errTip);
             }
         }
     });
