@@ -101,6 +101,11 @@ demo-js-qiniu
 *  访问`http://127.0.0.1:18080/`或`http://localhost:18080/`
 
 
+## 更多示例
+
+　这里分类汇总了 WildDog平台上的示例程序和开源应用，[Wilddog demos　](https://github.com/WildDogTeam/wilddog-demos) 
+　　
+
 ## 相关文档
 
 * [Wilddog 概览](https://z.wilddog.com/overview/guide)
