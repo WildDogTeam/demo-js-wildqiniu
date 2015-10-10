@@ -1,4 +1,4 @@
-#demo-js-wildqiniu
+demo-js-wildqiniu
 ============
 
 基于野狗和七牛API及Plupload开发的简单图片上传demo
