@@ -24,13 +24,13 @@ demo-js-qiniu
 	│   └── views
 	│       └── index.html　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 	├── Gruntfile.coffee
-	├── Makefile
-	├── package.json
+	├── Makefile	      make配置文件
+	├── package.json　　　　　　npm install
 	├── README.md
 	└── src
 	    ├── qiniu.js
-	    ├── qiniu.min.js
-	    └── wilddog.js
+	    ├── qiniu.min.js   　七牛sdk
+	    └── wilddog.js  	野狗javascript sdk
 
 
 
@@ -41,7 +41,7 @@ demo-js-qiniu
 *  安装 [Nodejs](http://nodejs.org/download/)、[npm](https://www.npmjs.org/)
 
 *  获取源代码：
-    `git clone https://github.com/WildDogTeam/demo-js-qiniu.git`
+    `git clone https://github.com/WildDogTeam/demo-js-wildqiniu.git`
 *  进入`demo`目录,修改`config.js`，`Access Key`和`Secret Key` 按如下方式获取
 
     * [开通七牛开发者帐号](https://portal.qiniu.com/signup)
@@ -50,30 +50,33 @@ demo-js-qiniu
         ```javascript
 
             module.exports = {
-                'ACCESS_KEY': '<Your Access Key>',
-                'SECRET_KEY': '<Your Secret Key>',
-                'Bucket_Name': '<Your Bucket Name>',
-                'Port': 18080,
-                'Uptoken_Url': '<Your Uptoken_Url>',
-                'Domain': '<Your Bucket Domain>'
+                'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
+		'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP',
+		'Bucket_Name': 'baidu',
+		'Port': 18080,
+		'Uptoken_Url': '/uptoken',
+		'Domain': 'http://qiniu-plupload.qiniudn.com/'
             }
 
         ```
-　　　　 * [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
+
+　　　　* [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
 
         ```javascript
 
             'wilddog':{
-                'baseurl': '<Your wilddog url>' ////野狗url引用地址      
+                'baseurl':'<https://<yourappId>.wilddogio.com/' ////野狗url引用地址      
             },
             'qiniu':{
-                 'imageBaseUrl': '<Your qiniu imagebase url>' //七牛存储图片的baseurl,本例demo中用到，代码七牛图片存储的url前缀 
+                 'imageBaseUrl':'<http://7xklh8.com1.z0.glb.clouddn.com/>' //七牛存储图片的baseurl,本例demo中用到，代码七牛图片存储的url前缀 
             }
 
         ```
-　　　　　　* 主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库
+
+　　　　* 主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库
 	
 	```javascript
+
 	     'FileUploaded': function(up, file, info) {
                 var res = $.parseJSON(info);
                     var url;
@@ -92,6 +95,7 @@ demo-js-qiniu
                         "time": new Date().getTime()
                     });
              }
+
 	```
 *  在根目录运行`make`启动
 
