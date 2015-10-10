@@ -60,7 +60,7 @@ demo-js-qiniu
 
         ```
 
-　　　　* [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
+    * [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
 
         ```javascript
 
@@ -72,13 +72,11 @@ demo-js-qiniu
             }
 
         ```
+    * [主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库](ss)
 
-　　　　* 主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库
-	
-	```javascript
-
-	     'FileUploaded': function(up, file, info) {
-                var res = $.parseJSON(info);
+            ```javscript
+		'FileUploaded': {
+		var res = $.parseJSON(info);
                     var url;
                     if (res.url) {
                         url = res.url;
@@ -94,9 +92,9 @@ demo-js-qiniu
                         "url":url,
                         "time": new Date().getTime()
                     });
-             }
 
-	```
+             }
+		```
 *  在根目录运行`make`启动
 
 *  访问`http://127.0.0.1:18080/`或`http://localhost:18080/`
