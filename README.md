@@ -103,7 +103,8 @@ demo-js-wildqiniu
 
 ## 更多示例
 
-　这里分类汇总了 WildDog平台上的示例程序和开源应用，[Wilddog demos　](https://github.com/WildDogTeam/wilddog-demos) 
+
+　这里分类汇总了 WildDog平台上的示例程序和开源应用，　链接地址：[https://github.com/WildDogTeam/wilddog-demos](https://github.com/WildDogTeam/wilddog-demos)
 　　
 
 ## 相关文档
