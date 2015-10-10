@@ -1,7 +1,7 @@
-demo-js-qiniu
+demo-js-wildqiniu
 ============
 
-基于野狗和七牛API及Plupload开发的前端JavaScript
+基于野狗和七牛API及Plupload开发的简单图片上传demo
 
 ## 概述
 
