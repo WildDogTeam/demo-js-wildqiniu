@@ -45,6 +45,9 @@ demo-js-wildqiniu
 *  进入`demo`目录,修改`config.js`，`Access Key`和`Secret Key` 按如下方式获取
 
     * [开通七牛开发者帐号](https://portal.qiniu.com/signup)
+      新建一个bucket
+      ![新建七牛bucket快照](qiniu2.png)
+      
     * [登录七牛开发者自助平台，查看 AccessKey 和 SecretKey](https://portal.qiniu.com/setting/key) 。
 
         ```javascript
@@ -72,6 +75,7 @@ demo-js-wildqiniu
             }
 
         ```
+ 	![七牛imagebaseurl快照](qiniu1.png)
     * 主要代码，主要是图片上传成功后，在回调函数中保存数据到野狗数据库
 
         ```javscript
