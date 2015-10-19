@@ -53,17 +53,17 @@ demo-js-wildqiniu
         ```javascript
 
             module.exports = {
-			'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ',
-			'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP',
-			'Bucket_Name': 'baidu',
+			'ACCESS_KEY': 'uYloQGwKRDQ0Oi9QA21H3u-V8AR0Gx6HBwCxJmiJ', // '<Your Access Key>'
+			'SECRET_KEY': '2CckSyuEpevMLAzFsWswlCmYyWgb3kM6nSVUd3jP', //'SECRET_KEY': '<Your Secret Key>'
+			'Bucket_Name': 'baidu',   				  //'<Your Bucket Name>',
 			'Port': 18080,
-			'Uptoken_Url': '/uptoken',
-			'Domain': 'http://qiniu-plupload.qiniudn.com/'
+			'Uptoken_Url': '/uptoken',  				  //'<Your Uptoken_Url>
+			'Domain': 'http://qiniu-plupload.qiniudn.com/'		  //'<Your Bucket Domain>'
             }
 
         ```
 
-    * [野狗开发者帐号](https://www.wilddog.com/my-account/signup)
+    * [野狗开发者帐号](https://www.wilddog.com/my-account/signup),`js/conf.js`
 
         ```javascript
 
