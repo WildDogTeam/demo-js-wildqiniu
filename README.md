@@ -115,10 +115,9 @@ demo-js-wildqiniu
 
 * [Wilddog 概览](https://z.wilddog.com/overview/introduction)
 * [JavaScript SDK快速入门](https://z.wilddog.com/web/quickstart)
-* [JavaScript SDK 开发向导](https://z.wilddog.com/web/quickstart)
 * [JavaScript SDK API](https://z.wilddog.com/web/api)
 * [下载页面](https://www.wilddog.com/download/)
-* [Wilddog FAQ](https://z.wilddog.com/faq/qa)
+* [Wilddog FAQ](https://z.wilddog.com/questions)
 * [七牛官方文档-上传](http://developer.qiniu.com/docs/v6/api/reference/up/)
 * [七牛官方文档-图片处理](http://developer.qiniu.com/docs/v6/api/reference/fop/image/)
 
